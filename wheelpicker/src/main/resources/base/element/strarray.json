@@ -1,0 +1,101 @@
+{
+  "strarray":[
+    {
+      "name":"WheelArrayDefault",
+      "value":[
+        {
+          "value":"AigeStudio"
+        },
+        {
+          "value":"Aige"
+        },
+        {
+          "value":"爱哥"
+        },
+        {
+          "value":"jeg elsker"
+        },
+        {
+          "value":"사랑해요 형"
+        },
+        {
+          "value":"Amor de irmão"
+        },
+        {
+          "value":"armastan"
+        },
+        {
+          "value":"愛の兄"
+        },
+        {
+          "value":"обичам те"
+        },
+        {
+          "value":"miłość bracie"
+        },
+        {
+          "value":"Liebe"
+        },
+        {
+          "value":"Lamour"
+        },
+        {
+          "value":"rakastan sinua"
+        },
+        {
+          "value":"láska.."
+        },
+        {
+          "value":"dragostea."
+        },
+        {
+          "value":"jag älskar"
+        },
+        {
+          "value":"ljubezen, brat.."
+        },
+        {
+          "value":"愛哥."
+        },
+        {
+          "value":"ชอบพี่"
+        },
+        {
+          "value":"αγάπη μου"
+        },
+        {
+          "value":"a szerelem."
+        },
+        {
+          "value":"Amore, fratello."
+        }
+      ]
+    },
+    {
+      "name":"WheelArrayWeek",
+      "value": [
+        {
+          "value":"Monday"
+        },
+        {
+          "value":"Tuesday"
+        },
+        {
+          "value":"Wednesday"
+        },
+        {
+          "value":"Thursday"
+        },
+        {
+          "value":"Friday"
+        },
+        {
+          "value":"Saturday"
+        },
+        {
+          "value":"Sunday"
+        }
+      ]
+    }
+  ]
+}

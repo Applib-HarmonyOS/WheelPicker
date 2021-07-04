@@ -1,0 +1,25 @@
+{
+  "pattern":[
+    {
+      "name":"dimen",
+      "value":[
+        {
+          "name":"WheelItemTextSize",
+          "value":"24sp"
+        },
+        {
+          "name":"WheelItemSpace",
+          "value":"12dp"
+        },
+        {
+          "name":"WheelIndicatorSize",
+          "value":"2dp"
+        },
+        {
+          "name":"WheelMargins",
+          "value":"8dp"
+        }
+      ]
+    }
+  ]
+}
