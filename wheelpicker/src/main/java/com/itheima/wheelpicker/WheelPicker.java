@@ -606,7 +606,7 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker, Runn
 
             int distanceToCenter = 0;
             if (isCurved) {
-                distanceToCenter = addCurved(mDrawnCenterY);
+                distanceToCenter = addCurved(mDrawnItemCenterY);
             }
             if (hasAtmospheric) {
                 addAtmospheric(mDrawnItemCenterY);
