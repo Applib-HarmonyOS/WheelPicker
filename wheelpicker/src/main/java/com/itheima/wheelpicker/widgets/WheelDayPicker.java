@@ -2,22 +2,22 @@ package com.itheima.wheelpicker.widgets;
 
 
 import com.itheima.wheelpicker.WheelPicker;
-import ohos.agp.components.AttrSet;
-import ohos.app.Context;
-import ohos.global.resource.NotExistException;
-import ohos.global.resource.WrongTypeException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import ohos.agp.components.AttrSet;
+import ohos.app.Context;
+import ohos.global.resource.NotExistException;
+import ohos.global.resource.WrongTypeException;
+
 
 /**
- * 日期选择器
- * <p>
- * Picker for Day
+ * 日期选择器.
+ *
+ * <p>Picker for Day
  *
  * @author AigeStudio 2016-07-12
  * @version 1
@@ -59,8 +59,9 @@ public class WheelDayPicker extends WheelPicker implements IWheelDayPicker {
         List<Integer> data = DAYS.get(days);
         if (null == data) {
             data = new ArrayList<>();
-            for (int i = 1; i <= days; i++)
+            for (int i = 1; i <= days; i++) {
                 data.add(i);
+            }
             DAYS.put(days, data);
         }
         super.setData(data);

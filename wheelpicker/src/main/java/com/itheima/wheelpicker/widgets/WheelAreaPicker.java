@@ -5,14 +5,16 @@ import com.itheima.wheelpicker.WheelPicker;
 import com.itheima.wheelpicker.model.City;
 import com.itheima.wheelpicker.model.Province;
 import com.itheima.wheelpicker.util.LogUtil;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.List;
 import ohos.agp.colors.RgbPalette;
 import ohos.agp.components.AttrSet;
 import ohos.agp.components.DirectionalLayout;
 import ohos.app.Context;
-
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
@@ -61,7 +63,7 @@ public class WheelAreaPicker extends DirectionalLayout implements IWheelAreaPick
         List<Province> provinceList = null;
         try (
             InputStream inputStream = context.getResourceManager().getRawFileEntry(path).openRawFile()
-        ){
+        ) {
             objectInputStream = new ObjectInputStream(inputStream);
             provinceList = (List<Province>) objectInputStream.readObject();
 
@@ -133,8 +135,9 @@ public class WheelAreaPicker extends DirectionalLayout implements IWheelAreaPick
         //获取所有city的名字
         //重置先前的城市集合数据
         mCityName.clear();
-        for (City city : mCityList)
+        for (City city : mCityList) {
             mCityName.add(city.getName());
+        }
         mWPCity.setData(mCityName);
         mWPCity.setSelectedItemPosition(0);
         //获取第一个城市对应的城区的名字
