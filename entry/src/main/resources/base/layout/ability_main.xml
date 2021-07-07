@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app ="http://schemas.huawei.com/hap/res-auto"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <com.itheima.wheelpicker.WheelPicker
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:center_in_parent="true"
+        app:wheel_atmospheric="true"
+        app:wheel_curved="true"
+        app:wheel_cyclic="true"
+        app:wheel_selected_item_position="5"
+        app:wheel_item_text_color="#0000ff"
+        app:wheel_selected_item_text_color="#ff0000"/>
+
+</DependentLayout>

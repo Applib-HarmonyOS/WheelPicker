@@ -1,0 +1,96 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "WheelPicker"
+    },
+    {
+      "name": "Year",
+      "value": "Y"
+    },
+    {
+      "name": "Month",
+      "value": "M"
+    },
+    {
+      "name": "Day",
+      "value": "D"
+    },
+    {
+      "name": "wheelItemTextSize",
+      "value": "wheel_item_text_size"
+    },
+    {
+      "name": "wheelSelectedItemPosition",
+      "value": "wheel_selected_item_position"
+    },
+    {
+      "name": "wheelItemTextColor",
+      "value": "wheel_item_text_color"
+    },
+    {
+      "name": "wheelSelectedItemTextColor",
+      "value": "wheel_selected_item_text_color"
+    },
+    {
+      "name": "wheelSameWidth",
+      "value": "wheel_same_width"
+    },
+    {
+      "name": "wheelMaximumWidthText",
+      "value": "wheel_maximum_width_text"
+    },
+    {
+      "name": "wheelMaximumWidthTextPosition",
+      "value": "wheel_maximum_width_text_position"
+    },
+    {
+      "name": "wheelVisibleItemCount",
+      "value": "wheel_visible_item_count"
+    },
+    {
+      "name": "wheelItemSpace",
+      "value": "wheel_item_space"
+    },
+    {
+      "name": "wheelCyclic",
+      "value": "wheel_cyclic"
+    },
+    {
+      "name": "wheelIndicator",
+      "value": "wheel_indicator"
+    },
+    {
+      "name": "wheelIndicatorColor",
+      "value": "wheel_indicator_color"
+    },
+    {
+      "name": "wheelIndicatorSize",
+      "value": "wheel_indicator_size"
+    },
+    {
+      "name": "wheelCurtain",
+      "value": "wheel_curtain"
+    },
+    {
+      "name": "wheelCurtainColor",
+      "value": "wheel_curtain_color"
+    },
+    {
+      "name": "wheelAtmospheric",
+      "value": "wheel_atmospheric"
+    },
+    {
+      "name": "wheelCurved",
+      "value": "wheel_curved"
+    },
+    {
+      "name": "wheelItemAlign",
+      "value": "wheel_item_align"
+    },
+    {
+      "name": "wheelFontPath",
+      "value": "wheel_font_path"
+    }
+  ]
+}

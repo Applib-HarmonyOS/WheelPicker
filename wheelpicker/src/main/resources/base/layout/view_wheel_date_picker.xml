@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="horizontal">
+
+    <com.itheima.wheelpicker.widgets.WheelYearPicker
+        ohos:id="$+id:wheel_date_picker_year"
+        ohos:height="match_content"
+        ohos:width="match_content"/>
+
+    <Text
+        ohos:id="$+id:wheel_date_picker_year_tv"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_color="#536D8A"
+        ohos:end_margin="$float:WheelMargins"
+        ohos:start_margin="$float:WheelMargins"
+        ohos:text="$string:Year" />
+
+    <com.itheima.wheelpicker.widgets.WheelMonthPicker
+        ohos:id="$+id:wheel_date_picker_month"
+        ohos:height="match_content"
+        ohos:width="match_content"/>
+
+    <Text
+        ohos:text_color="#536D8A"
+        ohos:id="$+id:wheel_date_picker_month_tv"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:end_margin="$float:WheelMargins"
+        ohos:start_margin="$float:WheelMargins"
+        ohos:text="$string:Month"/>
+
+    <com.itheima.wheelpicker.widgets.WheelDayPicker
+        ohos:id="$+id:wheel_date_picker_day"
+        ohos:height="match_content"
+        ohos:width="match_content" />
+
+    <Text
+        ohos:text_color="#536D8A"
+        ohos:id="$+id:wheel_date_picker_day_tv"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:start_margin="$float:WheelMargins"
+        ohos:text="$string:Day"/>
+</DirectionalLayout>

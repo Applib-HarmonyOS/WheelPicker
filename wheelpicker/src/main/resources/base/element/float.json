@@ -1,0 +1,21 @@
+{
+  "float":[
+    {
+      "name":"WheelItemTextSize",
+      "value":"24vp"
+    },
+    {
+      "name":"WheelItemSpace",
+      "value":"12vp"
+    },
+    {
+      "name":"WheelIndicatorSize",
+      "value":"2vp"
+    },
+    {
+      "name":"WheelMargins",
+      "value":"8vp"
+    }
+  ]
+}
+
