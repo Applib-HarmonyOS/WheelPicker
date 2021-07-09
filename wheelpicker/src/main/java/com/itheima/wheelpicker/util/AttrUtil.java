@@ -35,6 +35,9 @@ public final class AttrUtil {
 
     /**
      * To get Color Value from key.
+     *
+     * <p>Set data source of WheelPicker
+     *
      * @param attrSet Attribute Set
      * @param key String key
      * @param defValue default value
@@ -51,6 +54,7 @@ public final class AttrUtil {
 
     /**
      * To get Color Value from key.
+     *
      * @param attrSet Attribute Set
      * @param key String key
      * @param isDefValue default value
@@ -67,6 +71,7 @@ public final class AttrUtil {
 
     /**
      * To get Color Value from key.
+     *
      * @param attrSet Attribute Set
      * @param key String key
      * @param defValue default value
@@ -83,6 +88,7 @@ public final class AttrUtil {
 
     /**
      * To get Color Value from key.
+     *
      * @param attrSet Attribute Set
      * @param key String key
      * @param defValue default value
@@ -99,6 +105,7 @@ public final class AttrUtil {
 
     /**
      * To get Color Value from key.
+     *
      * @param attrSet Attribute Set
      * @param key String key
      * @param defDimensionValue default value
@@ -115,6 +122,7 @@ public final class AttrUtil {
 
     /**
      * To get Color Value from key.
+     *
      * @param attrSet Attribute Set
      * @param key String key
      * @param defValue default value
@@ -129,6 +137,13 @@ public final class AttrUtil {
         }
     }
 
+    /**
+     * To create Font.
+     *
+     * @param context context
+     * @param fontFamily font type
+     * @return Font
+     */
     public static Font createFont(Context context, String fontFamily) {
         String path = RAW_FILE_PATH + fontFamily;
         LogUtil.error(TAG, "Font Path : " + path);
@@ -149,6 +164,13 @@ public final class AttrUtil {
         return Optional.of(new Font.Builder(file).setWeight(Font.REGULAR).build()).get();
     }
 
+    /**
+     * To get Dimension.
+     *
+     * @param context context
+     * @param id id
+     * @return float
+     */
     public static float getDimen(Context context, int id) {
         float result = 0;
         if (context == null) {
@@ -172,6 +194,13 @@ public final class AttrUtil {
         return result;
     }
 
+    /**
+     * To get String.
+     *
+     * @param context context
+     * @param i id
+     * @return string
+     */
     public static String getString(Context context, int i) {
         try {
             return context.getResourceManager().getElement(i).getString();
