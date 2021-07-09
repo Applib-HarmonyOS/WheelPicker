@@ -1,21 +1,21 @@
-# 最火Android开源项目WheelPicker使用
+# The most popular Android open source project WheelPicker uses
 ---
-开源地址：[https://github.com/open-android/WheelPicker](https://github.com/open-android/WheelPicker "开源项目地址")
+Open source address：[https://github.com/open-android/WheelPicker](https://github.com/open-android/WheelPicker "开源项目地址")
 
- PS：如果觉得文章太长，你也可观看该课程的[视频](https://www.boxuegu.com/web/html/video.html?courseId=172&sectionId=8a2c9bed5a3a4c7e015a3bbffc6107ed&chapterId=8a2c9bed5a3a4c7e015a3adeb65b03f1&vId=8a2c9bed5a3a4c7e015a3ab4fe0601bb&videoId=F94BC8E95143C10D9C33DC5901307461)，亲，里面还有高清，无码的福利喔
+ PS: If you think the article is too long, you can also watch the[ video of ](https://www.boxuegu.com/web/html/video.html?courseId=172&sectionId=8a2c9bed5a3a4c7e015a3bbffc6107ed&chapterId=8a2c9bed5a3a4c7e015a3adeb65b03f1&vId=8a2c9bed5a3a4c7e015a3ab4fe0601bb&videoId=F94BC8E95143C10D9C33DC5901307461)the course , dear, there are also high-definition, uncoded benefits in it.
 
-# 运行效果
+# Running result
 
 ![](http://i.imgur.com/TPkIrBJ.gif)
 
-* 爱生活,爱学习,更爱做代码的搬运工,分类查找更方便请下载黑马助手app
+* Love life, love learning, and love to be a code porter. It is more convenient to sort and search, please download the dark horse assistant app
 
 
 ![黑马助手.png](http://upload-images.jianshu.io/upload_images/4037105-f777f1214328dcc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 使用步骤
+## Steps for usage
 
-### 1. 在project的build.gradle添加如下代码(如下图)
+### 1. Add the following code to the build.gradle of the project (as shown below)
 
 	allprojects {
 	    repositories {
@@ -27,12 +27,12 @@
 ![](http://oi5nqn6ce.bkt.clouddn.com/itheima/booster/code/jitpack.png)
 
 
-### 2. 在Module的build.gradle添加依赖
+### 2. Add dependency in Module's build.gradle
 
      compile 'com.github.open-android:WheelPicker:v1.0.0'
 
 
-### 3. 复制如下代码到xml
+### 3. Copy the following code to xml
 
     <com.itheima.wheelpicker.WheelPicker
         android:layout_width="wrap_content"
@@ -54,16 +54,16 @@
         wheel_item_text_color 未选中的条目颜色
         wheel_selected_item_text_color  选中的条目颜色-->
 
-###4 . 运行即可
+### 4. Just run it
 
-#### 细节注意:
+#### Attention to details:
 
-> 默认会自带一组数据，所以无需设置数据。 若想设置新的数据，可通过 调用如下方法即可
+> A set of data will be included by default, so there is no need to set data. If you want to set new data, you can call the following method
 
 		setData(List data); 
 
-* 详细的使用方法在DEMO里面都演示啦,如果你觉得这个库还不错,请赏我一颗star吧~~~
+* The detailed usage method is demonstrated in DEMO. If you think this library is not bad, please reward me with a star~~~
 
-* 欢迎关注微信公众号
+* Welcome to follow WeChat public account
 
 ![](http://oi5nqn6ce.bkt.clouddn.com/itheima/booster/code/qrcode.png)
