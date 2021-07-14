@@ -1,1 +1,1 @@
-include ':entry', ':wheelpicker', ':library'
+include ':entry', ':wheelpicker'
