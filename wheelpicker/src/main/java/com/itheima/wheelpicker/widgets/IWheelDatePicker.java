@@ -1,10 +1,11 @@
 package com.itheima.wheelpicker.widgets;
 
+import java.util.Date;
 import ohos.agp.components.Text;
 
-
-import java.util.Date;
-
+/**
+ * IWheelDatePicker interface for WheelPicker.
+ */
 public interface IWheelDatePicker {
     void setOnDateSelectedListener(WheelDatePicker.OnDateSelectedListener listener);
 

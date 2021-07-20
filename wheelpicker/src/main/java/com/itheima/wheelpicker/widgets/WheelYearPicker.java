@@ -29,6 +29,15 @@ public class WheelYearPicker extends WheelPicker implements IWheelYearPicker {
         super(context);
     }
 
+    /**
+     * WheelYearPicker class for WheelPicker.
+     *
+     * @param context context
+     * @param attrs attribute set
+     * @throws NotExistException NotExistException
+     * @throws WrongTypeException WrongTypeException
+     * @throws IOException IOException
+     */
     public WheelYearPicker(Context context, AttrSet attrs) throws NotExistException, WrongTypeException, IOException {
         super(context, attrs);
 

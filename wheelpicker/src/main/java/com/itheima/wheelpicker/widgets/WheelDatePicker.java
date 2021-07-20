@@ -18,6 +18,9 @@ import ohos.agp.components.Text;
 import ohos.agp.text.Font;
 import ohos.app.Context;
 
+/**
+ * WheelDatePicker class for WheelPicker.
+ */
 public class WheelDatePicker extends DirectionalLayout implements WheelPicker.OnItemSelectedListener,
         IDebug, IWheelPicker, IWheelDatePicker, IWheelYearPicker, IWheelMonthPicker,
         IWheelDayPicker {
@@ -46,6 +49,12 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
         super(context);
     }
 
+    /**
+     * WheelDatePicker class for WheelPicker.
+     *
+     * @param context context
+     * @param attrs attribute set
+     */
     public WheelDatePicker(Context context, AttrSet attrs) {
         super(context, attrs);
 
@@ -138,6 +147,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setOnItemSelectedListener.
+     *
      * @deprecated (can not set OnItemSelectedListener for WheelDatePicker)
      */
     @Deprecated
@@ -148,6 +159,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * getSelectedItemPosition.
+     *
      * @deprecated (can not get position of selected item from WheelDatePicker)
      */
     @Deprecated
@@ -158,6 +171,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setSelectedItemPosition.
+     *
      * @deprecated (can not set position of selected item for WheelDatePicker)
      */
     @Deprecated
@@ -168,6 +183,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * getCurrentItemPosition.
+     *
      * @deprecated (can not get position of current item from WheelDatePicker)
      */
     @Deprecated
@@ -178,6 +195,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * getData.
+     *
      * @deprecated (can not get data source from WheelDatePicker)
      */
     @Deprecated
@@ -187,6 +206,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setData.
+     *
      * @deprecated (don't need to set data source for WheelDatePicker)
      */
     @Deprecated
@@ -197,6 +218,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setSameWidth.
+     *
      * @deprecated (don't need to set same width for WheelDatePicker)
      */
     @Deprecated
@@ -207,6 +230,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * hasSameWidth.
+     *
      * @deprecated (don't need to set same width for WheelDatePicker)
      */
     @Deprecated
@@ -217,6 +242,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setOnWheelChangeListener.
+     *
      * @deprecated (WheelDatePicker unsupport set OnWheelChangeListener)
      */
     @Deprecated
@@ -227,6 +254,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * getMaximumWidthText.
+     *
      * @deprecated (can not get maximum width text from WheelDatePicker)
      */
     @Deprecated
@@ -237,6 +266,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setMaximumWidthText.
+     *
      * @deprecated (don't need to set maximum width text for WheelDatePicker)
      */
     @Deprecated
@@ -247,6 +278,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * getMaximumWidthTextPosition.
+     *
      * @deprecated (can not get maximum width text position from WheelDatePicker)
      */
     @Deprecated
@@ -257,6 +290,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setMaximumWidthTextPosition.
+     *
      * @deprecated (don't need to set maximum width text position for WheelDatePicker)
      */
     @Deprecated
@@ -440,6 +475,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * getItemAlign.
+     *
      * @deprecated (can not get item align from WheelDatePicker)
      */
     @Deprecated
@@ -449,6 +486,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     }
 
     /**
+     * setItemAlign.
+     *
      * @deprecated (don't need to set item align for WheelDatePicker)
      */
     @Deprecated
@@ -650,11 +689,19 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
         return getSelectedMonth();
     }
 
+    /**
+     * setMonth.
+     *
+     * @param month 月份
+     */
     @Override
     public void setMonth(int month) {
         setSelectedMonth(month);
     }
 
+    /**
+     * OnDateSelectedListener.
+     */
     public interface OnDateSelectedListener {
         void onDateSelected(WheelDatePicker picker, Date date);
     }

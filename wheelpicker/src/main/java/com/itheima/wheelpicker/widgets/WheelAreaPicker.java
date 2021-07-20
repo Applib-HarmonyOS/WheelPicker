@@ -38,6 +38,12 @@ public class WheelAreaPicker extends DirectionalLayout implements IWheelAreaPick
     private WheelPicker mWPCity;
     private WheelPicker mWPArea;
 
+    /**
+     * WheelAreaPicker class for WheelPicker.
+     *
+     * @param context context
+     * @param attrs attribute set
+     */
     public WheelAreaPicker(Context context, AttrSet attrs) {
         super(context, attrs);
 
@@ -124,7 +130,6 @@ public class WheelAreaPicker extends DirectionalLayout implements IWheelAreaPick
         });
 
         mWPCity.setOnItemSelectedListener((picker, data, position) ->
-            //获取城市对应的城区的名字
                 mWPArea.setData(mCityList.get(position).getArea())
         );
     }

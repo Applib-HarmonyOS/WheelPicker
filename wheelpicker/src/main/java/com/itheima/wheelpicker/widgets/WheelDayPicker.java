@@ -35,6 +35,15 @@ public class WheelDayPicker extends WheelPicker implements IWheelDayPicker {
         super(context);
     }
 
+    /**
+     * WheelDayPicker class for WheelPicker.
+     *
+     * @param context context
+     * @param attrs attribute set
+     * @throws NotExistException NotExistException
+     * @throws WrongTypeException WrongTypeException
+     * @throws IOException IOException
+     */
     public WheelDayPicker(Context context, AttrSet attrs) throws NotExistException, WrongTypeException, IOException {
         super(context, attrs);
 

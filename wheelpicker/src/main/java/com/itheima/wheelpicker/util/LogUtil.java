@@ -3,6 +3,9 @@ package com.itheima.wheelpicker.util;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
+/**
+ * LogUtil class for errors.
+ */
 public class LogUtil {
     private static final String TAG_LOG = "systembartint";
 
