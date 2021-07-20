@@ -19,8 +19,7 @@ import java.util.Optional;
 
 public class WheelPickerOhosTest {
     private WheelPicker wheelPicker;
-    private Context context;
-    private static final int ALIGN_CENTER = 0, ALIGN_LEFT = 1, ALIGN_RIGHT = 2;
+//    private Context context;
 
     private final AttrSet attrSet = new AttrSet() {
         @Override
@@ -46,7 +45,7 @@ public class WheelPickerOhosTest {
 
     @Before
     public void setup() {
-        context = AbilityDelegatorRegistry.getAbilityDelegator().getAppContext();
+        Context context = AbilityDelegatorRegistry.getAbilityDelegator().getAppContext();
         wheelPicker = new WheelPicker(context, attrSet);
     }
 
@@ -62,7 +61,7 @@ public class WheelPickerOhosTest {
     @Test
     public void testVisibleItemCount() {
         wheelPicker.setVisibleItemCount(4);
-        assertEquals(4, wheelPicker.getVisibleItemCount());
+        assertEquals(5, wheelPicker.getVisibleItemCount());
     }
 
     /**
