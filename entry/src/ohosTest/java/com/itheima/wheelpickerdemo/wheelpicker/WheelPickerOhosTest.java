@@ -19,7 +19,6 @@ import java.util.Optional;
 
 public class WheelPickerOhosTest {
     private WheelPicker wheelPicker;
-//    private Context context;
 
     private final AttrSet attrSet = new AttrSet() {
         @Override
