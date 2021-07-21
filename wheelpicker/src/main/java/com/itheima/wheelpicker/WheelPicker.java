@@ -460,7 +460,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
             throw new ArithmeticException("Wheel's visible item count can not be less than 2!");
         }
 
-        // 确保滚轮选择器可见数据项数量为奇数
         // Be sure count of visible item is odd number
         if (mVisibleItemCount % 2 == 0) {
             mVisibleItemCount += 1;
@@ -508,12 +507,10 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
      */
     public void onMeasure() {
 
-        // 计算原始内容尺寸
         // Correct sizes of original content
         int resultWidth = mTextMaxWidth;
         int resultHeight = mTextMaxHeight * mVisibleItemCount + mItemSpace * (mVisibleItemCount - 1);
 
-        // 如果开启弯曲效果则需要重新计算弯曲后的尺寸
         // Correct view sizes again if curved is enable
         if (isCurved) {
             resultHeight = (int) (2 * resultHeight / Math.PI);
@@ -522,7 +519,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
             LogUtil.error(TAG, "Wheel's content size is (" + resultWidth + ":" + resultHeight + ")");
         }
 
-        // 考虑内边距对尺寸的影响
         // Consideration padding influence the view sizes
         resultWidth += getPaddingLeft() + getPaddingRight();
         resultHeight += getPaddingTop() + getPaddingBottom();
@@ -539,7 +535,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
      * This is called during layout when the size of this component has changed.
      */
     public void onSizeChanged() {
-        // 设置内容区域
         // Set content region
         mRectDrawn.set(getPaddingLeft(), getPaddingTop(), getWidth() - getPaddingRight(),
                 getHeight() - getPaddingBottom());
@@ -549,12 +544,10 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
                     + mRectDrawn.top + ")");
         }
 
-        // 获取内容区域中心坐标
         // Get the center coordinates of content region
         mWheelCenterX = mRectDrawn.getCenterX();
         mWheelCenterY = mRectDrawn.getCenterY();
 
-        // 计算数据项绘制中心
         // Correct item drawn center
         computeDrawnCenter();
 
@@ -563,15 +556,12 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
         mItemHeight = mRectDrawn.getHeight() / mVisibleItemCount;
         mHalfItemHeight = mItemHeight / 2;
 
-        // 初始化滑动最大坐标
         // Initialize fling max Y-coordinates
         computeFlingLimitY();
 
-        // 计算指示器绘制区域
         // Correct region of indicator
         computeIndicatorRect();
 
-        // 计算当前选中的数据项区域
         // Correct region of current select item
         computeCurrentItemRect();
     }
@@ -649,7 +639,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
             if (hasAtmospheric) {
                 addAtmospheric(mDrawnItemCenterY);
             }
-            // 根据卷曲与否计算数据项绘制Y方向中心坐标
             // Calculate the center coordinates of the data item in the Y direction
             // according to whether it is curled or not
             // Correct item's drawn centerY base on curved state
@@ -657,7 +646,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
 
             String data = handleCyclic(drawnDataPos);
 
-            // 判断是否需要为当前数据项绘制不同颜色
             // Judges need to draw different color for current item or not
             addItemColor(canvas, data, drawnCenterY);
 
@@ -665,12 +653,10 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
                 handleDebug(canvas, drawnOffsetPos);
             }
         }
-        // 是否需要绘制幕布
         // Need to draw curtain or not
         if (hasCurtain) {
             addCurtain(canvas);
         }
-        // 是否需要绘制指示器
         // Need to draw indicator or not
         if (hasIndicator) {
             addIndicator(canvas);
@@ -768,12 +754,10 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
     }
 
     private int addCurved(int mDrawnItemCenterY) {
-        // 计算数据项绘制中心距离滚轮中心的距离比率
         // Correct ratio of item's drawn center to wheel center
         float ratio = (mDrawnCenterY - Math.abs(mDrawnCenterY - mDrawnItemCenterY)
                 - mRectDrawn.top) * 1.0F / (mDrawnCenterY - mRectDrawn.top);
 
-        // 计算单位
         // Correct unit
         int unit = 0;
         if (mDrawnItemCenterY > mDrawnCenterY) {
@@ -845,7 +829,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
                     mOnWheelChangeListener.onWheelScrollStateChanged(SCROLL_STATE_DRAGGING);
                 }
 
-                // 滚动内容
                 // Scroll WheelPicker's content
                 float move = point.getY() - mLastPointY;
                 if (Math.abs(move) < 1) {
@@ -892,7 +875,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
         mVelocityDetector.addEvent(event);
         mVelocityDetector.calculateCurrentVelocity(1000);
 
-        // 根据速度判断是该滚动还是滑动
         // Judges the WheelPicker is scroll or fling base on current velocity
         isForceFinishScroll = false;
         int velocity = (int) mVelocityDetector.getVerticalVelocity();
@@ -904,7 +886,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
             mScroller.startScroll(0, mScrollOffsetY, 0,
                     computeDistanceToEndPoint(mScrollOffsetY % mItemHeight));
         }
-        // 校正坐标
         // Correct coordinates
         if  (!isCyclic)  {
             if  (mScroller.getCurrValue(AXIS_Y) > mMaxFlingY) {
@@ -1070,7 +1051,6 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
         }
         mData = data;
 
-        // 重置位置
         if (mSelectedItemPosition > data.size() - 1 || mCurrentItemPosition > data.size() - 1) {
             mSelectedItemPosition = mCurrentItemPosition = data.size() - 1;
         } else {
@@ -1301,7 +1281,7 @@ public class WheelPicker extends Component implements IDebug, IWheelPicker,
      * The interface to monitor when the wheel selector Item is selected.
      *
      * @author AigeStudio 2016-06-17
-     *         新项目结构
+     *         New project structure
      * @version 1.1.0
      */
     public interface OnItemSelectedListener {

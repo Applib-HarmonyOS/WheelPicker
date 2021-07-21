@@ -15,9 +15,7 @@ import ohos.global.resource.WrongTypeException;
 
 
 /**
- * 日期选择器.
- *
- * <p>Picker for Day
+ * Picker for Day.
  *
  * @author AigeStudio 2016-07-12
  * @version 1

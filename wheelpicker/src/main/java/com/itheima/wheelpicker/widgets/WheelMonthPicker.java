@@ -13,9 +13,7 @@ import ohos.global.resource.WrongTypeException;
 
 
 /**
- * 月份选择器.
- *
- * <p>Picker for Months
+ * Picker for Months.
  *
  * @author AigeStudio 2016-07-12
  * @version 1
