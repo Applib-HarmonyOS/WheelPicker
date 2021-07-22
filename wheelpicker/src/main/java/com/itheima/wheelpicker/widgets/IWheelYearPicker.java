@@ -1,68 +1,66 @@
 package com.itheima.wheelpicker.widgets;
 
 /**
- * 年份选择器方法接口.
- *
- * <p>Interface of WheelYearPicker
+ * Interface of WheelYearPicker.
  *
  * @author AigeStudio 2016-07-12
  * @version 1
  */
 public interface IWheelYearPicker {
     /**
-     * 设置年份范围.
+     * Set the year range.
      *
-     * @param start 开始的年份
-     * @param end   结束的年份
+     * @param start Year of start
+     * @param end   End year
      */
     void setYearFrame(int start, int end);
 
     /**
-     * 获取开始的年份.
+     * Get the start year.
      *
-     * @return 开始的年份
+     * @return Year of start
      */
     int getYearStart();
 
     /**
-     * 设置开始的年份.
+     * Set the start year.
      *
-     * @param start 开始的年份
+     * @param start Year of start
      */
     void setYearStart(int start);
 
     /**
-     * 获取结束的年份.
+     * Get the end year.
      *
-     * @return 结束的年份
+     * @return End year
      */
     int getYearEnd();
 
     /**
-     * 设置结束的年份.
+     * Set the end year.
      *
-     * @param end 结束的年份
+     * @param end End year
      */
     void setYearEnd(int end);
 
     /**
-     * 获取年份选择器初始化时选中的年份.
+     * Get the year selected when the year picker was initialized.
      *
-     * @return 年份选择器初始化时选中的年份
+     * @return The year selected when the year selector was initialized
      */
     int getSelectedYear();
 
     /**
-     * 设置年份选择器初始化时选中的年份.
+     * Set the year selected when the year picker is initialized.
      *
-     * @param year 年份选择器初始化时选中的年份
+     * @param year The year selected when the year selector was initialized
      */
     void setSelectedYear(int year);
 
     /**
-     * 获取当前选中的年份.
+     * Get the currently selected year.
      *
-     * @return 当前选中的年份
+     * @return Currently selected year
      */
     int getCurrentYear();
 }

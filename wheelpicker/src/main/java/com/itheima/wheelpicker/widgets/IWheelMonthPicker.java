@@ -1,32 +1,30 @@
 package com.itheima.wheelpicker.widgets;
 
 /**
- * 月份选择器方法接口.
- *
- * <p>Interface of WheelMonthPicker
+ * Interface of WheelMonthPicker.
  *
  * @author AigeStudio 2016-07-12
  * @version 1
  */
 public interface IWheelMonthPicker {
     /**
-     * 获取月份选择器初始化时选择的月份.
+     * Get the month selected when the month picker was initialized.
      *
-     * @return 选择的月份
+     * @return Selected month
      */
     int getSelectedMonth();
 
     /**
-     * 设置月份选择器初始化时选择的月份.
+     * Set the month selected when the month picker is initialized.
      *
-     * @param month 选择的月份
+     * @param month Selected month
      */
     void setSelectedMonth(int month);
 
     /**
-     * 获取当前选择的月份.
+     * Get the currently selected month.
      *
-     * @return 当前选择的月份
+     * @return Currently selected month
      */
     int getCurrentMonth();
 }

@@ -13,9 +13,7 @@ import ohos.global.resource.WrongTypeException;
 
 
 /**
- * 年份选择器.
- *
- * <p>Picker for Years
+ * Picker for Years.
  *
  * @author AigeStudio 2016-07-12
  * @version 1

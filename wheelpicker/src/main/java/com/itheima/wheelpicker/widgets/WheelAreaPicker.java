@@ -122,9 +122,8 @@ public class WheelAreaPicker extends DirectionalLayout implements IWheelAreaPick
     }
 
     private void addListenerToWheelPicker() {
-        //监听省份的滑轮,根据省份的滑轮滑动的数据来设置市跟地区的滑轮数据
         mWPProvince.setOnItemSelectedListener((picker, data, position) -> {
-            //获得该省所有城市的集合
+            //Get a collection of all cities in the province
             mCityList = mProvinceList.get(position).getCity();
             setCityAndAreaData(position);
         });
@@ -135,18 +134,18 @@ public class WheelAreaPicker extends DirectionalLayout implements IWheelAreaPick
     }
 
     private void setCityAndAreaData(int position) {
-        //获得该省所有城市的集合
+        //Get a collection of all cities in the province
         mCityList = mProvinceList.get(position).getCity();
-        //获取所有city的名字
-        //重置先前的城市集合数据
+        //Get the names of all cities
+        //Reset the previous city collection data
         mCityName.clear();
         for (City city : mCityList) {
             mCityName.add(city.getName());
         }
         mWPCity.setData(mCityName);
         mWPCity.setSelectedItemPosition(0);
-        //获取第一个城市对应的城区的名字
-        //重置先前的城区集合的数据
+        //Get the name of the district corresponding to the first city
+        //Reset the data of the previous city collection
         mWPArea.setData(mCityList.get(0).getArea());
         mWPArea.setSelectedItemPosition(0);
     }

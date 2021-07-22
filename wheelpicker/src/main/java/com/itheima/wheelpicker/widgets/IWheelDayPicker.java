@@ -1,68 +1,66 @@
 package com.itheima.wheelpicker.widgets;
 
 /**
- * 选择器方法接口.
- *
- * <p>Interface of WheelDayPicker
+ * Interface of WheelDayPicker.
  *
  * @author AigeStudio 2016-07-12
  * @version 1
  */
 public interface IWheelDayPicker {
     /**
-     * 获取日期选择器初始化时选择的日期.
+     * Get the date selected when the date picker was initialized.
      *
-     * @return 选择的日期
+     * @return Selected date
      */
     int getSelectedDay();
 
     /**
-     * 设置日期选择器初始化时选择的日期.
+     * Set the date selected when the date picker is initialized.
      *
-     * @param day 选择的日期
+     * @param day selected Date
      */
     void setSelectedDay(int day);
 
     /**
-     * 获取当前选择的日期.
+     * Get the currently selected date.
      *
-     * @return 选择的日期
+     * @return Selected date
      */
     int getCurrentDay();
 
     /**
-     * 设置年份和月份.
+     * Set the year and month.
      *
-     * @param year  年份
-     * @param month 月份
+     * @param year  particular year
+     * @param month Month
      */
     void setYearAndMonth(int year, int month);
 
     /**
-     * 获取年份.
+     * Get the year.
      *
-     * @return 年份
+     * @return particular year
      */
     int getYear();
 
     /**
-     * 设置年份.
+     * Set year.
      *
      * @param year ...
      */
     void setYear(int year);
 
     /**
-     * 获取月份.
+     * Get the month.
      *
-     * @return 月份
+     * @return Month
      */
     int getMonth();
 
     /**
-     * 设置月份.
+     * Set month.
      *
-     * @param month 月份
+     * @param month Month
      */
     void setMonth(int month);
 }

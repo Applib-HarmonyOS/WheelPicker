@@ -12,7 +12,7 @@ public interface IDebug {
      * Enabling debug mode may reduce code execution efficiency to a certain extent，
      * Please be sure to turn off the debug mode when it is officially released
      *
-     * @param isDebug 是否为调试模式
+     * @param isDebug Whether it is debug mode
      */
     void setDebug(boolean isDebug);
 }
