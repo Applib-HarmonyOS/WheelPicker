@@ -105,7 +105,7 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
             try {
                 mListener.onDateSelected(this, sdf.parse(date));
             } catch (ParseException e) {
-                e.printStackTrace();
+                LogUtil.error(TAG,  "Date Parse Exception");
             }
         }
     }
@@ -148,10 +148,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setOnItemSelectedListener.
-     *
-     * @deprecated (can not set OnItemSelectedListener for WheelDatePicker)
+     * (can not set OnItemSelectedListener for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setOnItemSelectedListener(WheelPicker.OnItemSelectedListener listener) {
         throw new UnsupportedOperationException("You can not set OnItemSelectedListener for"
@@ -160,10 +158,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * getSelectedItemPosition.
-     *
-     * @deprecated (can not get position of selected item from WheelDatePicker)
+     * (can not get position of selected item from WheelDatePicker)
      */
-    @Deprecated
     @Override
     public int getSelectedItemPosition() {
         throw new UnsupportedOperationException("You can not get position of selected item from"
@@ -172,10 +168,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setSelectedItemPosition.
-     *
-     * @deprecated (can not set position of selected item for WheelDatePicker)
+     * (can not set position of selected item for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setSelectedItemPosition(int position) {
         throw new UnsupportedOperationException("You can not set position of selected item for"
@@ -184,10 +178,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * getCurrentItemPosition.
-     *
-     * @deprecated (can not get position of current item from WheelDatePicker)
+     * (can not get position of current item from WheelDatePicker)
      */
-    @Deprecated
     @Override
     public int getCurrentItemPosition() {
         throw new UnsupportedOperationException("You can not get position of current item from"
@@ -196,10 +188,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * getData.
-     *
-     * @deprecated (can not get data source from WheelDatePicker)
+     * (can not get data source from WheelDatePicker)
      */
-    @Deprecated
     @Override
     public List getData() {
         throw new UnsupportedOperationException("You can not get data source from WheelDatePicker");
@@ -207,10 +197,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setData.
-     *
-     * @deprecated (don't need to set data source for WheelDatePicker)
+     * (don't need to set data source for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setData(List data) {
         throw new UnsupportedOperationException("You don't need to set data source for"
@@ -219,10 +207,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setSameWidth.
-     *
-     * @deprecated (don't need to set same width for WheelDatePicker)
+     * (don't need to set same width for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setSameWidth(boolean hasSameSize) {
         throw new UnsupportedOperationException("You don't need to set same width for"
@@ -231,10 +217,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * hasSameWidth.
-     *
-     * @deprecated (don't need to set same width for WheelDatePicker)
+     * (don't need to set same width for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public boolean hasSameWidth() {
         throw new UnsupportedOperationException("You don't need to set same width for"
@@ -243,10 +227,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setOnWheelChangeListener.
-     *
-     * @deprecated (WheelDatePicker unsupport set OnWheelChangeListener)
+     * (WheelDatePicker unsupport set OnWheelChangeListener)
      */
-    @Deprecated
     @Override
     public void setOnWheelChangeListener(WheelPicker.OnWheelChangeListener listener) {
         throw new UnsupportedOperationException("WheelDatePicker unsupport set"
@@ -255,10 +237,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * getMaximumWidthText.
-     *
-     * @deprecated (can not get maximum width text from WheelDatePicker)
+     * (can not get maximum width text from WheelDatePicker)
      */
-    @Deprecated
     @Override
     public String getMaximumWidthText() {
         throw new UnsupportedOperationException("You can not get maximum width text from"
@@ -267,10 +247,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setMaximumWidthText.
-     *
-     * @deprecated (don't need to set maximum width text for WheelDatePicker)
+     * (don't need to set maximum width text for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setMaximumWidthText(String text) {
         throw new UnsupportedOperationException("You don't need to set maximum width text for"
@@ -279,10 +257,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * getMaximumWidthTextPosition.
-     *
-     * @deprecated (can not get maximum width text position from WheelDatePicker)
+     * (can not get maximum width text position from WheelDatePicker)
      */
-    @Deprecated
     @Override
     public int getMaximumWidthTextPosition() {
         throw new UnsupportedOperationException("You can not get maximum width text position"
@@ -291,10 +267,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setMaximumWidthTextPosition.
-     *
-     * @deprecated (don't need to set maximum width text position for WheelDatePicker)
+     * (don't need to set maximum width text position for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setMaximumWidthTextPosition(int position) {
         throw new UnsupportedOperationException("You don't need to set maximum width text"
@@ -476,10 +450,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * getItemAlign.
-     *
-     * @deprecated (can not get item align from WheelDatePicker)
+     * (can not get item align from WheelDatePicker)
      */
-    @Deprecated
     @Override
     public int getItemAlign() {
         throw new UnsupportedOperationException("You can not get item align from WheelDatePicker");
@@ -487,10 +459,8 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
 
     /**
      * setItemAlign.
-     *
-     * @deprecated (don't need to set item align for WheelDatePicker)
+     * (don't need to set item align for WheelDatePicker)
      */
-    @Deprecated
     @Override
     public void setItemAlign(int align) {
         throw new UnsupportedOperationException("You don't need to set item align for"
@@ -525,7 +495,7 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
         try {
             return sdf.parse(date);
         } catch (ParseException e) {
-            e.printStackTrace();
+            LogUtil.error(TAG,  "Date Parse Exception");
         }
         return null;
     }
@@ -692,7 +662,7 @@ public class WheelDatePicker extends DirectionalLayout implements WheelPicker.On
     /**
      * setMonth.
      *
-     * @param month 月份
+     * @param month MONTH
      */
     @Override
     public void setMonth(int month) {
