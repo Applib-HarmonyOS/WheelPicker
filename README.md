@@ -16,24 +16,34 @@ Open source address：[https://github.com/open-android/WheelPicker](https://gith
 
 ## Steps for usage
 
-### 1. Add the following code to the build.gradle of the project (as shown below)
 
-	allprojects {
-	    repositories {
-	        ...
-	        maven { url "https://jitpack.io" }
-	    }
+### 1. Add dependency
+
+1.1. For using WheelPicker module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
+```
+	dependencies {
+		implementation project(':wheelpicker')
+        	implementation fileTree(dir: 'libs', include: ['*.har'])
+        	testCompile 'junit:junit:4.12'
+	}
+```
+1.2. For using WheelPicker in separate application using har file, add the har file in the entry/libs folder and add the dependencies in entry/build.gradle file.
+```
+	dependencies {
+		implementation fileTree(dir: 'libs', include: ['*.har'])
+		testCompile 'junit:junit:4.12'
 	}
 
-![](http://oi5nqn6ce.bkt.clouddn.com/itheima/booster/code/jitpack.png)
+```
+1.3. For using WheelPicker from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+```
+	dependencies {
+		implementation 'dev.applibgroup:wheelpicker:1.0.0'
+		testCompile 'junit:junit:4.12'
+	}
+```
 
-
-### 2. Add dependency in Module's build.gradle
-
-     compile 'com.github.open-android:WheelPicker:v1.0.0'
-
-
-### 3. Copy the following code to xml
+### 2. Copy the following code to xml
 
     <com.itheima.wheelpicker.WheelPicker
         android:layout_width="wrap_content"
@@ -55,7 +65,7 @@ Open source address：[https://github.com/open-android/WheelPicker](https://gith
         wheel_item_text_color 未选中的条目颜色
         wheel_selected_item_text_color  选中的条目颜色-->
 
-### 4. Just run it
+### 3. Just run it
 
 #### Attention to details:
 
