@@ -1,4 +1,4 @@
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_WheelPicker&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_WheelPicker)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_WheelPicker&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_WheelPicker) [![Build](https://github.com/applibgroup/WheelPicker/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/WheelPicker/actions/workflows/main.yml)
 # The most popular Android open source project WheelPicker uses
 ---
 Open source address：[https://github.com/open-android/WheelPicker](https://github.com/open-android/WheelPicker "开源项目地址")
