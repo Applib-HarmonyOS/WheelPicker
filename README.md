@@ -1,18 +1,13 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_WheelPicker&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_WheelPicker) [![Build](https://github.com/applibgroup/WheelPicker/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/WheelPicker/actions/workflows/main.yml)
-# The most popular Android open source project WheelPicker uses
+# The most popular open source project WheelPicker uses
 ---
-Open source address：[https://github.com/open-android/WheelPicker](https://github.com/open-android/WheelPicker "开源项目地址")
 
- PS: If you think the article is too long, you can also watch the[ video of ](https://www.boxuegu.com/web/html/video.html?courseId=172&sectionId=8a2c9bed5a3a4c7e015a3bbffc6107ed&chapterId=8a2c9bed5a3a4c7e015a3adeb65b03f1&vId=8a2c9bed5a3a4c7e015a3ab4fe0601bb&videoId=F94BC8E95143C10D9C33DC5901307461)the course , dear, there are also high-definition, uncoded benefits in it.
+## Source
+Inspired from android library [https://github.com/open-android/WheelPicker](https://github.com/open-android/WheelPicker "开源项目地址")
 
-# Running result
+## Running result
 
 ![](http://i.imgur.com/TPkIrBJ.gif)
-
-* Love life, love learning, and love to be a code porter. It is more convenient to sort and search, please download the dark horse assistant app
-
-
-![黑马助手.png](http://upload-images.jianshu.io/upload_images/4037105-f777f1214328dcc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## Steps for usage
 
@@ -46,24 +41,23 @@ Open source address：[https://github.com/open-android/WheelPicker](https://gith
 ### 2. Copy the following code to xml
 
     <com.itheima.wheelpicker.WheelPicker
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:center_in_parent="true"
         app:wheel_atmospheric="true"
         app:wheel_curved="true"
         app:wheel_cyclic="true"
         app:wheel_selected_item_position="5"
-        app:wheel_item_text_color="#66ff0000"
-		app:wheel_selected_item_text_color="#6600ffff"/>
+        app:wheel_item_text_color="#0000ff"
+        app:wheel_selected_item_text_color="#ff0000"/>
 
-
-    <!--属性解释:
-	
-        wheel_atmospheric :  条目颜色是否执行衔接处理 效果更好
-        wheel_curved ： 是否是弧形状态显示
-        wheel_cyclic : 是否可循环
-        wheel_selected_item_position ： 默认选中第几个条目
-        wheel_item_text_color 未选中的条目颜色
-        wheel_selected_item_text_color  选中的条目颜色-->
+    <!--Property explanation:
+         wheel_atmospheric: Whether the color of the entry is to be processed for better results
+         wheel_curved: Whether it is a curved state display
+         wheel_cyclic: Whether it can be cyclic
+         wheel_selected_item_position: Which item is selected by default
+         wheel_item_text_color: unselected item color
+         wheel_selected_item_text_color: selected item color/-->
 
 ### 3. Just run it
 
@@ -73,8 +67,4 @@ Open source address：[https://github.com/open-android/WheelPicker](https://gith
 
 		setData(List data); 
 
-* The detailed usage method is demonstrated in DEMO. If you think this library is not bad, please reward me with a star~~~
-
-* Welcome to follow WeChat public account
-
-![](http://oi5nqn6ce.bkt.clouddn.com/itheima/booster/code/qrcode.png)
+If you think this library is not bad, please reward me with a star
